@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('pics/tile.jpg');
+}
+
+.title-header {
+	justify-content: center;
+	display: block;
+	align-items: center;
+	width: 20%;
+	margin: auto;
+	padding: 10px 10px;
+}
+.container-fluid {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inputs-div {
+	background-image: url('pics/formbg.jpg');
+	width: 1400px;
+	/* background-size: 100% 100%; */
+	position: center;
+	margin: auto;
+	height: 60px;
+}
+
+.input-task,
+.input-date,
+.input-time {
+	margin-top: 15px;
+	align-items: center;
+	background-position: center;
+	justify-content: center;
+	display: flex;
+}
+.save-btn {
+	display: flex;
+}
+.output-tasks {
+	display: flex;
+	margin: 20px;
+	width: 98%;
+	flex-wrap: wrap;
+}
+.main-header {
+	font-family: cursive;
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+.list-todo {
+	margin-left: 15px;
+	width: 138px;
+	overflow: auto;
+	max-height: 170px;
+	list-style-type: none;
+}
+
+.div-todo {
+	background-image: url('pics/notebg.png');
+	cursor: move;
+	user-select: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 22vh;
+	height: 30vh;
+	background-size: 173px 249px;
+	flex-shrink: 0;
+	overflow: auto;
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.text-list {
+	overflow: auto;
+	word-wrap: break-word;
+	position: static;
+	width: 129px;
+	height: 123px;
+	background-color: transparent;
+	border: none;
+	resize: none;
+}
+.list-todo-time-date {
+	margin-left: 1em;
+	margin-top: 0.5em;
+	list-style-type: none;
+}
+
+.div-container .end-todo-btn {
+	margin-top: 19px;
+	margin-left: 95px;
+	background-color: transparent;
+	border: none;
+	opacity: 0;
+}
+.div-container .remove-btn {
+	background-color: transparent;
+	border: none;
+	opacity: 0;
+}
+
+.div-container .save-edit-btn {
+	margin-left: 115px;
+	position: absolute;
+	margin-top: 378px;
+	background-color: transparent;
+	border: none;
+}
+.div-todo .edit-btn {
+	opacity: 0;
+	background-color: transparent;
+	border: none;
+}
+.div-todo:hover .remove-btn {
+	opacity: 1;
+}
+.div-todo:hover .end-todo-btn {
+	opacity: 1;
+}
+.div-todo:hover .edit-btn {
+	opacity: 1;
+}
+
+.sort-btn {
+	padding: auto;
+	align-items: center;
+	text-align: center;
+}
